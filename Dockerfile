@@ -1,4 +1,4 @@
-FROM php:7-fpm-alpine
+FROM php:5-fpm-alpine
 
 LABEL maintainer="wushunyi <wushunyi@live.com>"
 
@@ -11,8 +11,8 @@ ARG PHP_EXT_DEPS="postgresql-dev libmcrypt-dev libpng libpng-dev \
 
 ARG PHP_EXT_LIST="zip bcmath opcache sockets gd pdo_mysql mysqli pdo_pgsql"
 
-ARG MEMCACHED_VERSION=3.1.3 
-ARG REDIS_VERSION=5.0.0
+ARG MEMCACHED_VERSION=2.2.0
+ARG REDIS_VERSION=4.2.0
 ARG NGINX_VERSION=1.14.2
 
 # Install nginx
